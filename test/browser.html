@@ -1,0 +1,40 @@
+<head>
+	<title>tiling_wall_js check page</title>
+	<script src="http://code.jquery.com/jquery-2.1.1.js"></script>
+	<script src="../src/tiling_wall.js"></script>
+	<script>
+$(function() {
+	var input = {};
+	for (var i = 1; i <= 5; i++) {
+		for (var j = 1; j <= 5; j++) {
+			var width = i * 100;
+			var height = j * 100;
+			var name = 'http://placekitten.com/g/' + width + '/' + height;
+			input[name] = {width: width, height: height};
+		}
+	}
+
+	do {
+		var tw = new TilingWall(input);
+		var output = tw.arrange($(document.body).width());
+	} while (!(tw.width * 0.9 < tw.height && tw.height < tw.width * 1.1));
+
+	Object.keys(output).forEach(function(name) {
+		var out = output[name];
+		var img = $('<img/>');
+		img.prop('src', name);
+		img.css({
+			position: 'absolute',
+			width: out.width,
+			height: out.height,
+			left: out.x,
+			top: out.y,
+		});
+		$(document.body).append(img);
+	});
+});
+	</script>
+</head>
+<body>
+	
+</body>

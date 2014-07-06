@@ -6,6 +6,11 @@ Adaptation of PHP version to JavaScript.
 
 * [PHP implementation](https://github.com/nanikaka/tiling_wall) by nanikaka
 
+## Browser example
+
+* http://jsfiddle.net/W2pJ2/
+* test/browser.html (basically the same as the above)
+
 ## Install
 
 via bower
