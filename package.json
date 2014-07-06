@@ -1,0 +1,27 @@
+{
+  "name": "tiling_wall_js",
+  "version": "0.0.1",
+  "description": "Tile images with different sizes on a rectangle of given width.",
+  "main": "src/tiling_wall.js",
+  "directories": {
+    "test": "test"
+  },
+  "devDependencies": {
+    "jshint": "^2.5.2",
+    "mocha": "^1.20.1",
+    "expect.js": "^0.3.1"
+  },
+  "scripts": {
+    "test": "jshint && mocha --reporter spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/edvakf/tiling_wall_js.git"
+  },
+  "author": "Atsushi Takayama <taka.atsushi@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/edvakf/tiling_wall_js/issues"
+  },
+  "homepage": "https://github.com/edvakf/tiling_wall_js"
+}

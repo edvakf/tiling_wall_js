@@ -1,0 +1,23 @@
+{
+    // ommiting most of default config
+    // see: https://github.com/jshint/jshint/blob/master/examples/.jshintrc
+
+    // Enforcing
+    "bitwise"       : false,    // true: Prohibit bitwise operators (&, |, ^, etc.)
+    "curly"         : false,    // true: Require {} for every new block or scope
+    "newcap"        : true,     // true: Require capitalization of all constructor functions e.g. `new F()`
+    "quotmark"      : true,     // Quotation mark consistency:
+                                //   false    : do nothing (default)
+                                //   true     : ensure whatever is used is consistent
+                                //   "single" : require single quotes
+                                //   "double" : require double quotes
+
+    // Environments
+    "browser"       : true,     // Web Browser (window, document, etc)
+    "devel"         : true,     // Development/debugging (alert, confirm, etc)
+    "node"          : true,     // Node.js
+    "worker"        : true,     // Web Workers
+
+    // Custom Globals
+    "globals"       : {"exports": true, "define": true}        // additional predefined global variables
+}
